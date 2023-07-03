@@ -1,0 +1,29 @@
+.list-item {
+   padding: 1rem;
+   border: 1px solid var(--border-color);
+   margin-bottom: 1rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.list-item:last-child {
+   margin: 0;
+}
+
+.list-item .delete {
+   background-color: rgb(212, 0, 0);
+   color: white;
+   padding: 0.3rem;
+   width: 20px;
+   text-align: center;
+   height: 20px;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.list-item .delete:hover {
+   background-color: red;
+}

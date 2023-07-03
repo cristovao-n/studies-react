@@ -1,0 +1,11 @@
+.card {
+   padding: 2rem;
+   background-color: var(--light-color);
+   border-radius: 1rem;
+   width: min(90%, 600px);
+   margin: 0 auto 4rem;
+}
+
+.card p {
+   text-align: center;
+}

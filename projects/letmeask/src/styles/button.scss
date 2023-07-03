@@ -1,0 +1,47 @@
+@import "variables";
+
+.button {
+  height: 5rem;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  padding: 0 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.2s ease-in;
+
+  img {
+    margin-right: 0.8rem;
+  }
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &.primary {
+    background: $purple;
+    color: $white;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  &.secondary {
+    background: $red;
+    color: $white;
+    margin-top: 6.4rem;
+  }
+
+  &.outlined {
+    background: $white;
+    border: 0.1rem solid $purple;
+    color: $purple;
+  }
+}
